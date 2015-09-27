@@ -11,7 +11,13 @@ class MoviesController < ApplicationController
   end
 
   def index
-    @movies = Movie.all
+    sorter = params[:sorter]
+    @movies = Movie.order(sorter)
+    if sorter == "title"
+      #Make title_header yellow
+    elsif sorter == "realease_date"
+      #make the release_date header yellow
+    end
   end
 
   def new
