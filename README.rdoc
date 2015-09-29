@@ -26,3 +26,17 @@ Things you may want to cover:
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+
+
+What did you learn while doing this assignment?
+    The MVC framework. That Ruby on Rails does a lot for you automatically. We learned various aspects of the 
+    rails framework
+What additional sources did you use, beyond the textbook and/or lecture videos? From whom, if anyone, did you get help?
+    We used StackOverflow and the Ruby documentation.
+Approximately how much time did you spend on each part of the assignment?
+    2 hrs on setting up the server and repo
+    3 hours on sorting and hilighting
+    1 hour on filtering, did not finish. 
+    1.5 hours reading/journal
+What, if anything, did you get stuck on?
+    We got stuck on basically everything. Even after watching the videos and reading the book. 
