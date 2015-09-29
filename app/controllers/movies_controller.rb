@@ -13,10 +13,15 @@ class MoviesController < ApplicationController
   def index
     sorter = params[:sorter]
     @movies = Movie.order(sorter)
+    @all_ratings = Movie.all_ratings
+    if (params[:ratings])
+      @movies = Movie.find(:all, :conditions => {:rating => params[:ratings].keys})
+      #@movies.where(:rating => params[:ratings].keys)
+    end
     if sorter == "title"
-      #Make title_header yellow
-    elsif sorter == "realease_date"
-      #make the release_date header yellow
+      @title_hilite = 'hilite'
+    elsif sorter == "release_date"
+      @release_hilite = 'hilite'
     end
   end
 
